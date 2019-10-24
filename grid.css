@@ -1,0 +1,64 @@
+.grid-container {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    background: black;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.cell {
+    background: lightblue;
+    padding: 4px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.grid-2 {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    background: black;
+    grid-template-areas:
+    "header header header"
+    "left center right"
+    "footer footer footer";
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.header, .left, .center, .right, .footer {
+    padding: 4px;
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightcoral;
+}
+
+.left {
+    grid-area: left;
+    background-color: lightblue;
+}
+
+.center {
+    grid-area: center;
+    background-color: lightyellow;
+}
+
+.right {
+    grid-area: right;
+    background-color: lightseagreen;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightpink;
+}
