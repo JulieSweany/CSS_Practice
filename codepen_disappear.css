@@ -1,0 +1,162 @@
+﻿body {
+    /*background-color: darkorchid;*/
+    background: linear-gradient(darkorchid, orchid);
+}
+
+main {
+    width: 100%;
+}
+
+
+
+
+/* The animations*/
+@keyframes right1 {
+    from {
+        margin-left: 100%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+    50% {
+        margin-left: 50%;
+        margin-top: 10%;
+        width: 100%;
+        opacity: 1.0;
+    }
+   
+    to {
+        margin-left: 0%;
+        width: 300%;
+        opacity: 0.0;
+    }
+}
+
+@keyframes left2 {
+    from {
+        margin-left: 0%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+    50% {
+        margin-left: 50%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 300%;
+        opacity: 0.0;
+    }
+}
+
+@keyframes right3 {
+    from {
+        margin-left: 100%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+    50% {
+        margin-left: 30%;
+        width: 100%;
+        opacity: 1.0;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 300%;
+        opacity: 0.0;
+    }
+}
+
+/* The element to apply the animation to */
+
+
+#container1 {
+    opacity: 0.0;
+    animation-duration: 5s;
+    animation-name: right1;
+    margin-top: 5%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ghost1 {
+    background-color: white;
+    border-radius: 50% 50% 5% 5%;
+    width: 60px;
+    height: 100px;
+  
+}
+
+#container2 {
+    opacity: 0.0;
+    animation-duration: 5s;
+    animation-name: left2;
+    animation-delay: 1s;
+    margin-top: 5%;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ghost2 {
+    background-color: white;
+    border-radius: 50% 50% 5% 5%;
+    width: 120px;
+    height: 200px;
+    font-size: 2em;
+    
+}
+
+
+#container3 {
+    opacity: 0.0;
+    animation-duration: 5s;
+    animation-name: right3;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#ghost3 {
+    background-color: white;
+    border-radius: 50% 50% 5% 5%;
+    width: 70px;
+    height: 120px;
+    font-size: 1.5em;
+}
+
+#container4 {
+    opacity: 0.0;
+    animation-duration: 5s;
+    animation-name: left2;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#ghost4 {
+    background-color: white;
+    border-radius: 50% 50% 5% 5%;
+    width: 90px;
+    height: 140px;
+    font-size: 1.75em;
+}
+
+.face {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.mouth, .mouth2 {
+    width: 30%;
+    height: 15%;
+    background-color: darkorchid;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.mouth2 {
+    background-color: orchid;
+}
